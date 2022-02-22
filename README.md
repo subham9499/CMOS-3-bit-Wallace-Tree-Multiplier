@@ -85,25 +85,25 @@ Implememtation of XOR gate using NAND gate is shown in Fig. 4.
 
 <p align="center">
 <img src="Images/xor_cmos.PNG"></br>
-  Fig. 3: XOR gate implemented from NAND
+  Fig. 4: XOR gate implemented from NAND
 </p>
 
 </br>
 
-Implememtation of Half adder is shown in Fig. 4.
+Implememtation of Half adder is shown in Fig. 5.
 
 <p align="center">
 <img src="Images/half_adder.PNG"></br>
-  Fig. 3: Half Adder Circuit
+  Fig. 5: Half Adder Circuit
 </p>
 
 </br>
 
-Full adder can be implemented using half adders and or gate as shown in Fig. 5. 
+Full adder can be implemented using half adders and or gate as shown in Fig. 6. 
 
 <p align="center">
 <img src="Images/full_adder.PNG"></br>
-  Fig. 3: Full Adder Circuit
+  Fig. 6: Full Adder Circuit
 </p>
 
 </br>
@@ -114,42 +114,42 @@ The schematic of the components as discussed in above section are given below.
 
 <p align="center">
 <img src="Images/nand.PNG"></br>
-  Fig. 3: NAND gate
+  Fig. 7: NAND gate
 </p>
 
 </br>
 
 <p align="center">
 <img src="Images/and.PNG"></br>
-  Fig. 3: AND gate
+  Fig. 8: AND gate
 </p>
 
 </br>
 
 <p align="center">
 <img src="Images/or.PNG"></br>
-  Fig. 3: OR gate
+  Fig. 9: OR gate
 </p>
 
 </br>
 
 <p align="center">
 <img src="Images/xor.PNG"></br>
-  Fig. 3: XOR gate
+  Fig. 10: XOR gate
 </p>
 
 </br>
 
 <p align="center">
 <img src="Images/half.PNG"></br>
-  Fig. 3: Half Adder Circuit
+  Fig. 11: Half Adder Circuit
 </p>
 
 </br>
 
 <p align="center">
 <img src="Images/full.PNG"></br>
-  Fig. 3: Full Adder Circuit
+  Fig. 12: Full Adder Circuit
 </p>
 
 </br>
