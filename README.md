@@ -7,10 +7,8 @@ This project was done as a part of Analog Hackathon conductued by IITH, Synopsys
  * [Introduction](#Introduction)
  * [Circuit Details](#Circuit-Details)
  * [Schematic in Synopsys Custom Compiler](#Schematic-in-Synopsys-Custom-Compiler)
- * [Tools Used](#Tools-Used)
- * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
  * [Netlist of the Circuit](#Netlist-of-the-Circuit)
- * [Results](#Results)
+ * [Simulation and Results](#Simulation-and-Results)
  * [Author](#Author)
  * [Acknowledgements](#Acknowledgements)
  * [References](#References)
@@ -153,6 +151,36 @@ The schematic of the components as discussed in above section are given below.
 </p>
 
 </br>
+
+The circuit of the 3-bit wallace tree multiplier is shown in Fig. 13.
+
+<p align="center">
+<img src="Images/mult.PNG"></br>
+  Fig. 13: 3-bit Wallace Tree Multiplier
+</p>
+
+</br>
+
+# Simulation and Results
+
+The simulation was done in Synopsys Prime Wave tool. </br>
+The simulation setup is shown in Fig. 14. 
+
+<p align="center">
+<img src="Images/wave.PNG"></br>
+  Fig. 13: 3-bit Wallace Tree Multiplier
+</p>
+
+</br>
+
+The netlist of the circuit can be accessed  <a href='final_netlist'>here</a>
+
+# Results
+
+The result of the simulation is shown in Fig. 15. </br>
+As we can see it works perfectly as a 3-bit multiplier, for example for A2, A1, A0 as 1, 0, 1 and B@, B1, B0 as 0, 1, 0 we expect the output to be001010(Z5Z4Z3Z2Z1Z0) ans we get that from the waveforms too. Hence verifying our design and circuit.
+
+
 
 # Author:
 • Subham Mohapatra, B.Tech(EEE), National Institute of Technology Karnataka, Surathkal. <a href='https://www.linkedin.com/in/subham-nitk/'>LinkedIn</a></br>
