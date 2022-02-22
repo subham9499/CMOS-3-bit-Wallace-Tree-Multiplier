@@ -65,7 +65,7 @@ We will need the following components for the designing the 3-bit Wallace Tree M
 CMOS circuit of AND gate is shown in Fig. 2.
 
 <p align="center">
-<img src="Images/and_cmos.png"></br>
+<img src="Images/and_cmos.PNG"></br>
   Fig. 2: AND gate implemented in CMOS
 </p>
 
@@ -75,7 +75,7 @@ Half adders can be made using XOR gates and AND gates.</br> XOR gate is implemen
 The CMOS implementation of NAND gate is shown in Fig. 3.
 
 <p align="center">
-<img src="Images/nand_cmos.png"></br>
+<img src="Images/nand_cmos.PNG"></br>
   Fig. 3: NAND gate implemented in CMOS
 </p>
 
@@ -84,7 +84,7 @@ The CMOS implementation of NAND gate is shown in Fig. 3.
 Implememtation of XOR gate using NAND gate is shown in Fig. 4.
 
 <p align="center">
-<img src="Images/xor_cmos.png"></br>
+<img src="Images/xor_cmos.PNG"></br>
   Fig. 3: XOR gate implemented from NAND
 </p>
 
@@ -93,7 +93,7 @@ Implememtation of XOR gate using NAND gate is shown in Fig. 4.
 Implememtation of Half adder is shown in Fig. 4.
 
 <p align="center">
-<img src="Images/half_adder.png"></br>
+<img src="Images/half_adder.PNG"></br>
   Fig. 3: Half Adder Circuit
 </p>
 
