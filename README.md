@@ -46,6 +46,59 @@ sum two components. Finally the two resulting numbers
 are given as input to an adder and the final product is
 obtained. </br>
 
+The Circuit of the 3-bit wallace is as shown in Fig. 1
+
+<p align="center">
+<img src="Images/a1.png"></br>
+  Fig. 1: 3-bit Wallace Tree Multiplier
+</p>
+
+</br>
+
+We will need the following components for the designing the 3-bit Wallace Tree Multiplier:</br>
+1. AND gate</br>
+2. Half Adder</br>
+3. Full Adder</br>
+
+</br>
+
+CMOS circuit of AND gate is shown in Fig. 2.
+
+<p align="center">
+<img src="Images/and_cmos.png"></br>
+  Fig. 2: AND gate implemented in CMOS
+</p>
+
+</br>
+
+Half adders can be made using XOR gates and AND gates.</br> XOR gate is implemented here using the NAND gate. 
+The CMOS implementation of NAND gate is shown in Fig. 3.
+
+<p align="center">
+<img src="Images/nand_cmos.png"></br>
+  Fig. 3: NAND gate implemented in CMOS
+</p>
+
+</br>
+
+Implememtation of XOR gate using NAND gate is shown in Fig. 4.
+
+<p align="center">
+<img src="Images/xor_cmos.png"></br>
+  Fig. 3: XOR gate implemented from NAND
+</p>
+
+</br>
+
+Implememtation of Half adder is shown in Fig. 4.
+
+<p align="center">
+<img src="Images/half_adder.png"></br>
+  Fig. 3: Half Adder Circuit
+</p>
+
+</br>
+
 
 # Author:
 • Subham Mohapatra, B.Tech(EEE), National Institute of Technology Karnataka, Surathkal. <a href='https://www.linkedin.com/in/subham-nitk/'>LinkedIn</a></br>
