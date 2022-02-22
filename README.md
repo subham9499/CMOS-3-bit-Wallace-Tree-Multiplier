@@ -167,8 +167,8 @@ The simulation was done in Synopsys Prime Wave tool. </br>
 The simulation setup is shown in Fig. 14. 
 
 <p align="center">
-<img src="Images/wave.PNG"></br>
-  Fig. 13: 3-bit Wallace Tree Multiplier
+<img src="Images/test.PNG"></br>
+  Fig. 14: Simulation setup
 </p>
 
 </br>
@@ -179,6 +179,13 @@ The netlist of the circuit can be accessed  <a href='final_netlist'>here</a>
 
 The result of the simulation is shown in Fig. 15. </br>
 As we can see it works perfectly as a 3-bit multiplier, for example for A2, A1, A0 as 1, 0, 1 and B@, B1, B0 as 0, 1, 0 we expect the output to be001010(Z5Z4Z3Z2Z1Z0) ans we get that from the waveforms too. Hence verifying our design and circuit.
+
+<p align="center">
+<img src="Images/wave.PNG"></br>
+  Fig. 15: Simulation Result
+</p>
+
+</br>
 
 
 
