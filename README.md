@@ -35,7 +35,7 @@ bit of the other.  </br>
 layers of full and half adders.  </br>
 • Group the wires in two numbers, and add them with
 a conventional adder.  </br>
-First we need to multiply each bit of first factor(A)
+</br>First we need to multiply each bit of first factor(A)
 by each digit of the other factor(B). Each of this partial
 products will have weight equal to the product of its
 factors. The final product is calculated by the weighted
@@ -44,7 +44,7 @@ are reduced to two numbers, this is done by using a
 full adder to sum three components and half adder to
 sum two components. Finally the two resulting numbers
 are given as input to an adder and the final product is
-obtained.
+obtained. </br>
 
 
 # Author:
