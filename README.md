@@ -6,7 +6,7 @@ This project was done as a part of Analog Hackathon conductued by IITH, Synopsys
 # Table of Contents
  * [Introduction](#Introduction)
  * [Circuit Details](#Circuit-Details)
- * [Differential End Current Starved VCO](#Differential-End-Current-Starved-VCO)
+ * [Schematic in Synopsys Custom Compiler](#Schematic-in-Synopsys-Custom-Compiler)
  * [Tools Used](#Tools-Used)
  * [Pre-Layout Schematics and Simulations](#Pre-Layout-Schematics-and-Simulations)
  * [Netlist of the Circuit](#Netlist-of-the-Circuit)
@@ -99,6 +99,60 @@ Implememtation of Half adder is shown in Fig. 4.
 
 </br>
 
+Full adder can be implemented using half adders and or gate as shown in Fig. 5. 
+
+<p align="center">
+<img src="Images/full_adder.PNG"></br>
+  Fig. 3: Full Adder Circuit
+</p>
+
+</br>
+
+# Schematic in Synopsys Custom Compiler
+
+The schematic of the components as discussed in above section are given below.
+
+<p align="center">
+<img src="Images/nand.PNG"></br>
+  Fig. 3: NAND gate
+</p>
+
+</br>
+
+<p align="center">
+<img src="Images/and.PNG"></br>
+  Fig. 3: AND gate
+</p>
+
+</br>
+
+<p align="center">
+<img src="Images/or.PNG"></br>
+  Fig. 3: OR gate
+</p>
+
+</br>
+
+<p align="center">
+<img src="Images/xor.PNG"></br>
+  Fig. 3: XOR gate
+</p>
+
+</br>
+
+<p align="center">
+<img src="Images/half.PNG"></br>
+  Fig. 3: Half Adder Circuit
+</p>
+
+</br>
+
+<p align="center">
+<img src="Images/full.PNG"></br>
+  Fig. 3: Full Adder Circuit
+</p>
+
+</br>
 
 # Author:
 • Subham Mohapatra, B.Tech(EEE), National Institute of Technology Karnataka, Surathkal. <a href='https://www.linkedin.com/in/subham-nitk/'>LinkedIn</a></br>
