@@ -16,7 +16,7 @@ This project was done as a part of Analog Hackathon conductued by IITH, Synopsys
  * [References](#References)
 
 # Author:
-• Subham Mohapatra, B.Tech(EEE), National Institute of Technology Karnataka, Surathkal. <a href='www.linkedin.com/in/subham-nitk/'>LinkedIn</a></br>
+• Subham Mohapatra, B.Tech(EEE), National Institute of Technology Karnataka, Surathkal. <a href='https://www.linkedin.com/in/subham-nitk/'>LinkedIn</a></br>
 
 
 # Acknowledgements:
