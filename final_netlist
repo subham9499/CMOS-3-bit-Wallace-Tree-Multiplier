@@ -1,0 +1,171 @@
+*  Generated for: PrimeSim
+*  Design library name: subham_wallace_tree
+*  Design cell name: wallace_tree_multiplier_tb
+*  Design view name: schematic
+.lib '/PDK/SAED_PDK32nm/hspice/saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Tue Feb 22 10:20:21 2022
+
+.global gnd!
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : and_gate_new
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt and_gate_new a_in ab_out b_in gnd_1 vdd
+xm2 ab_out net7 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net7 b_in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net7 a_in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 ab_out net7 gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net17 b_in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm3 net7 a_in net17 net17 n105 w=0.1u l=0.03u nf=1 m=1
+.ends and_gate_new
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : nand_gate
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_gate a_in ab_out b_in gnd_1 vdd
+xm1 ab_out b_in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 ab_out a_in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net17 b_in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm3 ab_out a_in net17 net17 n105 w=0.1u l=0.03u nf=1 m=1
+.ends nand_gate
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : xor_gate_new
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt xor_gate_new a_in b_in gnd_1 out vdd
+xi3 b_in net16 net24 gnd_1 vdd nand_gate
+xi2 a_in net11 net24 gnd_1 vdd nand_gate
+xi1 net11 out net16 gnd_1 vdd nand_gate
+xi0 a_in net24 b_in gnd_1 vdd nand_gate
+.ends xor_gate_new
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : half_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt half_adder c s a_in b_in gnd_1 vdd
+xi0 a_in c b_in gnd_1 vdd and_gate_new
+xi1 a_in b_in gnd_1 s vdd xor_gate_new
+.ends half_adder
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : or_2x
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt or_2x a_in b_in gnd_1 out vdd
+xm2 out net13 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net13 b_in net5 net5 p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net5 a_in vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 out net13 gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net13 b_in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm3 net13 a_in gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+.ends or_2x
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : full_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt full_adder cout s a_in b_in c_in gnd_1 vdd
+xi1 net16 s net11 c_in gnd_1 vdd half_adder
+xi0 net17 net11 a_in b_in gnd_1 vdd half_adder
+xi2 net16 net17 gnd_1 cout vdd or_2x
+.ends full_adder
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : wallace_tree_multiplier
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt wallace_tree_multiplier a0 a1 a2 b0 b1 b2 z0 z1 z2 z3 z4 z5 gnd_1 vdd
+xi11 a2 net82 b2 gnd_1 vdd and_gate_new
+xi10 a1 net75 b2 gnd_1 vdd and_gate_new
+xi9 a0 net69 b2 gnd_1 vdd and_gate_new
+xi5 a2 net42 b1 gnd_1 vdd and_gate_new
+xi4 a1 net47 b1 gnd_1 vdd and_gate_new
+xi3 a0 net35 b1 gnd_1 vdd and_gate_new
+xi2 a2 net48 b0 gnd_1 vdd and_gate_new
+xi1 a1 net36 b0 gnd_1 vdd and_gate_new
+xi0 a0 z0 b0 gnd_1 vdd and_gate_new
+xi7 net83 net76 net43 net42 gnd_1 vdd half_adder
+xi12 net77 z2 net69 net70 gnd_1 vdd half_adder
+xi6 net49 z1 net35 net36 gnd_1 vdd half_adder
+xi14 z5 z4 net82 net83 net84 gnd_1 vdd full_adder
+xi13 net84 z3 net75 net76 net77 gnd_1 vdd full_adder
+xi8 net43 net70 net47 net48 net49 gnd_1 vdd full_adder
+.ends wallace_tree_multiplier
+
+********************************************************************************
+* Library          : subham_wallace_tree
+* Cell             : wallace_tree_multiplier_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a0 a1 a2 b0 b1 b2 z0 z1 z2 z3 z4 z5 gnd! vdd wallace_tree_multiplier
+c9 z0 gnd! c=1p
+c8 z1 gnd! c=1p
+c7 z2 gnd! c=1p
+c6 z3 gnd! c=1p
+c5 z4 gnd! c=1p
+c4 z5 gnd! c=1p
+v17 b2 gnd! dc=0 pulse ( 0 1.8 12u 0.1u 0.1u 10u 20u )
+v19 b0 gnd! dc=0 pulse ( 0 1.8 15u 0.1u 0.1u 14u 20u )
+v18 b1 gnd! dc=0 pulse ( 0 1.8 0 0.1u 0.1u 12u 20u )
+v14 a0 gnd! dc=0 pulse ( 0 1.8 0u 0.1u 0.1u 13u 26u )
+v13 a1 gnd! dc=0 pulse ( 0 1.8 12u 0.1u 0.1u 10u 20u )
+v12 a2 gnd! dc=0 pulse ( 0 1.8 0 0.1u 0.1u 10u 20u )
+v20 vdd gnd! dc=1.80
+
+
+
+
+
+
+
+
+.tran '0.1u' '70u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a0) v(a1) v(a2) v(b0) v(b1) v(b2) v(z0) v(z1) v(z2) v(z3) v(z4)
++ v(z5)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
