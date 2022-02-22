@@ -15,7 +15,7 @@ This project was done as a part of Analog Hackathon conductued by IITH, Synopsys
  * [Acknowledgements](#Acknowledgements)
  * [References](#References)
 
-#Introduction
+# Introduction
 
 A Wallace multiplier is a hardware
 implementation of a binary multiplier, commonly used in
@@ -26,15 +26,15 @@ numbers are left.This is also called the Wallace tree or
 Wallace reduction. Wallace multipliers were devised by
 the Australian computer scientist Chris Wallace in 1964
 
-#Circuit Details
+# Circuit Details
 
-The Wallace tree has three steps:
+The Wallace tree has three steps: </br>
 • Multiply each bit of one of the arguments, by each
-bit of the other.
+bit of the other.  </br>
 • Reduce the number of partial products to two by
-layers of full and half adders.
+layers of full and half adders.  </br>
 • Group the wires in two numbers, and add them with
-a conventional adder.
+a conventional adder.  </br>
 First we need to multiply each bit of first factor(A)
 by each digit of the other factor(B). Each of this partial
 products will have weight equal to the product of its
