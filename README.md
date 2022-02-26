@@ -178,7 +178,7 @@ The netlist of the circuit can be accessed  <a href='final_netlist'>here</a>
 # Results
 
 The result of the simulation is shown in Fig. 15. </br>
-As we can see it works perfectly as a 3-bit multiplier, for example for A2, A1, A0 as 1, 0, 1 and B@, B1, B0 as 0, 1, 0 we expect the output to be001010(Z5Z4Z3Z2Z1Z0) ans we get that from the waveforms too. Hence verifying our design and circuit.
+As we can see it works perfectly as a 3-bit multiplier, for example for A2, A1, A0 as 1, 0, 1 and B2, B1, B0 as 0, 1, 0 we expect the output to be001010(Z5Z4Z3Z2Z1Z0) ans we get that from the waveforms too. Hence verifying our design and circuit.
 
 <p align="center">
 <img src="Images/wave.PNG"></br>
